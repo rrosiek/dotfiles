@@ -8,6 +8,7 @@
 #
 # aliases
 #
+alias cd='z'
 alias ls='eza -l --icons'
 alias lt='eza -TL 2'
 alias lta='eza -la --icons'
@@ -32,6 +33,8 @@ cdf() {
 }
 
 export PATH=$PATH:~/.mix/escripts:~/.cargo/bin
+export HISTSIZE=10000
+export HISTFILESIZE=25000
 export FZF_DEFAULT_COMMAND='fd .'
 
 source ~/.env

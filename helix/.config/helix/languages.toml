@@ -1,3 +1,14 @@
+[language-server.expert]
+command = "/usr/local/bin/expert"
+
+[[language]]
+name = "elixir"
+language-servers = ["expert"]
+
+[[language]]
+name = "heex"
+language-servers = ["expert"]
+
 [language-server.tailwindcss-ls]
 command = "tailwindcss-language-server"
 args = ["--stdio"]
