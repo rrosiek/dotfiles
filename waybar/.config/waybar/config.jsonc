@@ -13,7 +13,8 @@
     "tray",
     "backlight",
     "pulseaudio",
-    "battery"
+    "battery",
+    "power"
   ],
   "pulseaudio": {
     "tooltip": false,
@@ -121,5 +122,10 @@
       "active": "",
       "default": ""
     }
+  },
+  "power": {
+    "format": "⏻ ",
+    "tooltip": false,
+    "on-click": "~/.config/waybar/powermenu.sh"
   }
 }

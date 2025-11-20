@@ -41,5 +41,5 @@ source ~/.env
 
 eval "$(fzf --bash)"
 eval "$(starship init bash)"
-eval "$(direnv hook bash)"
 eval "$(zoxide init bash)"
+eval "$(mise activate bash)"

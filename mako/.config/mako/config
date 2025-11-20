@@ -1,0 +1,71 @@
+# Global defaults
+font=monospace 10
+background-color=#285577FF
+text-color=#FFFFFFFF
+width=300
+height=100
+margin=10
+padding=5
+border-size=2
+border-color=#4C7899FF
+border-radius=0
+progress-color=over #5588AAFF
+icons=1
+max-icon-size=64
+icon-location=left
+markup=1
+actions=1
+history=1
+max-history=5
+format=<b>%s</b>\n%b
+text-alignment=left
+default-timeout=5000
+ignore-timeout=0
+group-by=app-name
+max-visible=5
+output=""
+layer=top
+anchor=top-right
+sort=-time
+
+# Bindings (global)
+on-button-left=invoke-default-action
+on-button-middle=exec makoctl menu -n "$id" dmenu -p 'Select action: '
+on-button-right=dismiss
+on-touch=dismiss
+on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
+
+# Include another config if needed
+# include=~/extra-config
+
+# Criteria for low urgency: shorter timeout, lighter color
+[urgency=low]
+default-timeout=3000
+background-color=#4C7899AA
+text-color=#DDDDDDFF
+
+# Criteria for normal urgency: standard but with icon radius
+[urgency=normal]
+icon-border-radius=5
+default-timeout=5000
+
+# Criteria for critical urgency: no timeout, bold border, overlay layer
+[urgency=critical]
+default-timeout=0
+border-size=4
+border-color=#FF0000FF
+layer=overlay
+on-notify=exec notify-send "Critical Alert" "High priority!"
+
+# Grouped notifications: custom format, hide extras
+[grouped]
+format=(%g) <b>%s</b>\n%b
+invisible=1
+
+# First in group: visible
+[group-index=0]
+invisible=0
+
+# Mode for do-not-disturb: hide all
+[mode=do-not-disturb]
+invisible=1
