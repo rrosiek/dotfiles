@@ -463,7 +463,7 @@ theme "catppuccin-macchiato"
 // - false
 // Default: false
 // 
-// web_server false
+web_server true
 // Whether to allow sessions started in the terminal to be shared through a local web server, assuming one is
 // running (see the `web_server` option for more details).
 // (Requires restart)
@@ -477,15 +477,15 @@ theme "catppuccin-macchiato"
 // - "disabled" (do not allow web sharing and do not permit sessions started in the terminal to opt-in to it)
 // Default: "off"
 // 
-// web_sharing "off"
+web_sharing "on"
 // A path to a certificate file to be used when setting up the web client to serve the
 // connection over HTTPs
 // 
-// web_server_cert "/path/to/cert.pem"
+web_server_cert "/etc/ssl/zellij.pem"
 // A path to a key file to be used when setting up the web client to serve the
 // connection over HTTPs
 // 
-// web_server_key "/path/to/key.pem"
+web_server_key "/etc/ssl/zellij.key"
 /// Whether to enforce https connections to the web server when it is bound to localhost
 /// (127.0.0.0/8)
 ///
@@ -517,12 +517,12 @@ theme "catppuccin-macchiato"
 // The ip address the web server should listen on when it starts
 // Default: "127.0.0.1"
 // (Requires restart)
-// web_server_ip "127.0.0.1"
+web_server_ip "0.0.0.0"
  
 // The port the web server should listen on when it starts
 // Default: 8082
 // (Requires restart)
-// web_server_port 8082
+web_server_port 8092
  
 // A command to run (will be wrapped with sh -c and provided the RESURRECT_COMMAND env variable) 
 // after Zellij attempts to discover a command inside a pane when resurrecting sessions, the STDOUT
