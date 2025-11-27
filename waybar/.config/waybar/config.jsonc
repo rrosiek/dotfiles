@@ -13,7 +13,6 @@
     "tray",
     "backlight",
     "pulseaudio",
-    "battery",
     "power"
   ],
   "pulseaudio": {
