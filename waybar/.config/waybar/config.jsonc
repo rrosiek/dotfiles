@@ -10,10 +10,8 @@
     "clock"
   ],
   "modules-right": [
-    "tray",
-    "backlight",
     "pulseaudio",
-    "power"
+    "custom/power"
   ],
   "pulseaudio": {
     "tooltip": false,
@@ -122,7 +120,7 @@
       "default": ""
     }
   },
-  "power": {
+  "custom/power": {
     "format": "⏻ ",
     "tooltip": false,
     "on-click": "~/.config/waybar/powermenu.sh"
