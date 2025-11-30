@@ -13,3 +13,7 @@ yes = false
 not_found_auto_install = true
 task_output = "prefix"
 paranoid = false
+
+trusted_config_paths = [
+  '~/workspace',
+]
