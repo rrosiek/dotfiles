@@ -10,7 +10,6 @@
     "clock"
   ],
   "modules-right": [
-    "tray",
     "backlight",
     "pulseaudio",
     "battery",
