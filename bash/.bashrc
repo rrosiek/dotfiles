@@ -35,6 +35,7 @@ cdf() {
 export PATH=$PATH:~/.mix/escripts:~/.cargo/bin
 export HISTSIZE=10000
 export HISTFILESIZE=25000
+export HYPRSHOT_DIR=~/Pictures
 export FZF_DEFAULT_COMMAND='fd .'
 
 source ~/.env
