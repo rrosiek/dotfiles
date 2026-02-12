@@ -7,11 +7,12 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "base_keymap": "SublimeText",
   "agent": {
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-4-5-sonnet-latest"
-    }
+      "model": "claude-4-5-sonnet-latest",
+    },
   },
   "helix_mode": true,
   "ui_font_family": "BerkeleyMono Nerd Font",
@@ -20,17 +21,25 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Tokyo Night"
+    "light": "Ayu Light",
+    "dark": "Ayu Dark",
+  },
+  "lsp": {
+    "expert": {
+      "binary": {
+        "arguments": ["--stdio"],
+      },
+    },
   },
   "languages": {
     "Elixir": {
-      "format_on_save": {
+      "formatter": {
         "external": {
           "command": "mix",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
-        }
-      }
-    }
-  }
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"],
+        },
+      },
+      "format_on_save": "on",
+    },
+  },
 }

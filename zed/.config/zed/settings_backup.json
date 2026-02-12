@@ -7,21 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "assistant": {
+  "agent": {
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-4-0-sonnet-latest"
-    },
-    "version": "2"
+      "model": "claude-4-5-sonnet-latest"
+    }
   },
+  "helix_mode": true,
   "ui_font_family": "BerkeleyMono Nerd Font",
   "ui_font_size": 15,
   "buffer_font_family": "BerkeleyMono Nerd Font",
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "One Light",
-    "dark": "Tokyo Night"
+    "light": "Ayu Light",
+    "dark": "Ayu Dark"
   },
   "languages": {
     "Elixir": {

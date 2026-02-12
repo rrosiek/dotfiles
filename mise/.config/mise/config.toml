@@ -17,3 +17,7 @@ paranoid = false
 trusted_config_paths = [
   '~/workspace',
 ]
+
+[tools]
+elixir = "1.19"
+erlang = "28"
