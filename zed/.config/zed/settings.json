@@ -10,8 +10,8 @@
   "agent": {
     "default_model": {
       "provider": "anthropic",
-      "model": "claude-4-5-sonnet-latest"
-    }
+      "model": "claude-4-5-sonnet-latest",
+    },
   },
   "helix_mode": true,
   "ui_font_family": "BerkeleyMono Nerd Font",
@@ -21,24 +21,25 @@
   "theme": {
     "mode": "system",
     "light": "Ayu Light",
-    "dark": "Ayu Dark"
+    "dark": "Ayu Dark",
   },
   "lsp": {
     "expert": {
       "binary": {
-        "arguments": ["--stdio"]
-      }
-    }
+        "arguments": ["--stdio"],
+      },
+    },
   },
   "languages": {
     "Elixir": {
+      "language_servers": ["expert", "!elixir-ls", "!next-ls", "!lexical"],
       "formatter": {
         "external": {
           "command": "mix",
-          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"]
-        }
+          "arguments": ["format", "--stdin-filename", "{buffer_path}", "-"],
+        },
       },
-      "format_on_save": "on"
-    }
-  }
+      "format_on_save": "on",
+    },
+  },
 }
