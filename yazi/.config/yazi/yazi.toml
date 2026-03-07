@@ -6,5 +6,5 @@ play = [
   { run = 'mpv "$@"', orphan = true, for = "unix" }
 ]
 open = [
-  { run = 'handlr open "$@"', desc = "Open" }
+  { run = 'xdg-open "$@"', desc = "Open with system default", orphan = true }
 ]
